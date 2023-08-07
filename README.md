@@ -9,7 +9,7 @@ To run this application locally, please follow these steps:
 1. Clone this repository.
 2. Install the required dependencies by running `pip install -r requirements.txt`.
 3. Set up your OpenAI credentials by creating a `.env` file and adding your `OPENAI_BASE` and `OPENAI_KEY`.
-4. Run the Streamlit app with the command `streamlit run main.py`.
+4. Run the Streamlit app with the command `streamlit run streamlit_app.py`.
 
 ## Usage
 
