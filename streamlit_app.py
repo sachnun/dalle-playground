@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OPENAI_BASE = os.getenv("OPENAI_BASE")
+OPENAI_BASE = os.getenv("OPENAI_BASE", "https://api.openai.com/v1")
 OPENAI_KEY = os.getenv("OPENAI_KEY")
 
 TEMPLATE = """
