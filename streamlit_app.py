@@ -64,11 +64,13 @@ def stabble_difussion(prompt):
     return response.json()["data"][0]["url"]
 
 
-text = st.text_input("Enter your idea here")
+if __name__ == "__main__":
+    st.title("DALL-E Playground")
 
-if text:
-    with st.spinner("Generating prompt..."):
-        prompt = make_prompt(text)
-    with st.spinner("Generating image..."):
-        image = stabble_difussion(text)
-    st.image(image, caption=prompt, use_column_width=True)
+    text = st.text_input("Enter your idea here")
+    if text:
+        with st.spinner("Generating prompt..."):
+            prompt = make_prompt(text)
+        with st.spinner("Generating image..."):
+            image = stabble_difussion(text)
+        st.image(image, caption=prompt, use_column_width=True)
